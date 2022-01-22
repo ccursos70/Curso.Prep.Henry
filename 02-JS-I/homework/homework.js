@@ -243,19 +243,17 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  const vocal = ["a", "e", "i", "o", "u"];
+  const vocales = ["a", "e", "i", "o", "u"];
   if (letra.length>1){
     return "Dato incorrecto";
   }else {
-  vocal.forEach(vocal => {
+  vocales.forEach(vocal => {
     if (letra===vocal){
       return "Es vocal";
-    }else{
-      return "Dato incorrecto";
-    }
-  }
-)
-}
+     }
+    });
+    return "Dato incorrecto";
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
