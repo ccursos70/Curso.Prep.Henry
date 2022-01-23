@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "hola buen dia a todoss";
+const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 123;
@@ -10,7 +10,7 @@ const nuevoNum = 123;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
@@ -177,7 +177,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(num===0){
+  if(num==0){
     return false;
   }else if(numero>0){
     return "Es positivo";
@@ -205,7 +205,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola"+" "+nombre;
+  return nombre + "->"+ "Hola" + " " + nombre;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -248,7 +248,7 @@ function esVocal(letra){
     return "Dato incorrecto";
   }else {
   vocales.forEach(vocal => {
-    if (letra===vocal){
+    if (letra==vocal){
       return "Es vocal";
      }
     });
