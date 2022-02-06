@@ -17,7 +17,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(ead>=18){
+  if(edad>=18){
     return "Allowed";
   }
     else{
@@ -26,21 +26,21 @@ function mayoriaDeEdad(edad) {
   }
 
   
-function conection(status) {
-  //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
-  //Cuando el estado es igual a 1, el usuario está "Online"
-  //Cuando el estado es igual a 2, el usuario está "Away"
-  //De lo contrario, presumimos que el usuario está "Offline"
-  //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status===1){
-    return "Online";
-  }else if(sytatus===2){
-    return "Away";
-  }else{
-    return "Offline";
+  function conection(status) {
+    //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
+    //Cuando el estado es igual a 1, el usuario está "Online"
+    //Cuando el estado es igual a 2, el usuario está "Away"
+    //De lo contrario, presumimos que el usuario está "Offline"
+    //Devolver el estado de conexión de usuario en cada uno de los casos.
+    if(status===1){
+      return "Online";
+    }else if(status===2){
+      return "Away";
+    }else{
+      return "Offline";
+    }
+  
   }
-
-}
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -132,22 +132,22 @@ return false;
   }
 
 
-function fizzBuzz(numero) {
-  // Si "numero" es divisible entre 3, devuelve "fizz"
-  // Si "numero" es divisible entre 5, devuelve "buzz"
-  // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
-  // De lo contrario, devuelve el numero
-  if (numero%3===0 && numero%5===0){
-    return "fizzbuzz";
-  }else if(numero%3===0){
-    return "fizz";
+  function fizzBuzz(numero) {
+    // Si "numero" es divisible entre 3, devuelve "fizz"
+    // Si "numero" es divisible entre 5, devuelve "buzz"
+    // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
+    // De lo contrario, devuelve el numero
+    if(numero%5===0 && numero%3===0){
+        return "fizzbuzz";
+    }else if(numero%3===0){
+      return "fizz";
+    }else if(numero%5===0){
+      return "buzz";
+    }else{
+      return numero;
+    }
 
-  }else if(numero%5){
-    return "buzz";
-    
-  }
-
-  }
+    }
 
 
 function operadoresLogicos(num1, num2, num3) {
