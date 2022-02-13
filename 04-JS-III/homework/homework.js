@@ -48,6 +48,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
+}
   
   
   function agregarItemAlFinalDelArray(array, elemento) {
@@ -74,14 +77,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (let i=0;0<array.length;i++){
-    if (array[i]===elemento){
-      return true
-    }else{
-       return false
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === elemento) {
+      return true;
     }
-   }
+  }
+      return false;
 }
+
 
 
 function agregarNumeros(numeros) {
@@ -186,10 +189,6 @@ function empiezaConNueve(n) {
 }
 
 
-function todosIguales(arreglo) {
-  //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
-  //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
   function todosIguales(arreglo) {
     //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
     //retornar true, caso contrario retornar false.
@@ -202,7 +201,7 @@ function todosIguales(arreglo) {
     }
     return true;
   } 
-} 
+
 
 
 function mesesDelAño(array) {
