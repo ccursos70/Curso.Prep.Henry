@@ -57,9 +57,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
     // Añade el "elemento" al final del array
     // y devuelve el array
     // Tu código:
-    array.unshift(elemento);
-    return array;  
-  }
+    array[array.length] = elemento;
+    return array;
+    }
 
 
 
